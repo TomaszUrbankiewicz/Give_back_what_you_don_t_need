@@ -1,10 +1,11 @@
-//import './App.scss';
+import HomeHeader from "./home/HomeHeader";
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Home=()=> {
   return (
-    <div className="AppTest">
-     <h1>TEST COMPONENT Home</h1>
-    </div>
+    <>
+    <HomeHeader name="HomeHeader"/>
+    </>
   );
 }
 

@@ -3,6 +3,17 @@
 @import "setitings/colors"; 
 
 
+@import "elements/home/homeHeader.scss";
+
 body{
     font-family: $font-base;
+}
+.lettering_with_decoration{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 140px;
+    width: 90%;
+    font-size: 2.5rem;
 }
