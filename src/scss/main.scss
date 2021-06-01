@@ -5,16 +5,18 @@
 
 @import "elements/home/homeHeader.scss";
 @import "elements/home/statistik";
+@import "./elements/home/whatIsGoingOn";
 
 body{
     font-family: $font-base;
-}
+};
+
 .lettering_with_decoration{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 140px;
-    width: 90%;
-    font-size: 2.5rem;
-}
+    width: 100%;
+    font-size: 2rem;
+};

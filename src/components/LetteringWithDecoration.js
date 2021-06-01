@@ -1,8 +1,7 @@
 import React from 'react';
 import foto from "../assets/Decoration.svg";
 
-const LetteringWithDecoration=(props)=>{
-
+const LetteringWithDecoration = (props) =>{
     return(
         <div className="lettering_with_decoration">
             <h1>{props.text}</h1>
@@ -10,6 +9,5 @@ const LetteringWithDecoration=(props)=>{
             <img src={foto} title="dekoracja"/>
         </div>
     );
-} 
-
+};
 export default LetteringWithDecoration; 

@@ -1,8 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from "react-router-dom";
 
-const LogInRegister=()=>{
-
+const LogInRegister = () =>{
     return(
         <div className="log_in_register">
             <ul>
@@ -10,7 +8,6 @@ const LogInRegister=()=>{
                 <li>Załuż konto</li>
             </ul>
         </div>
-    )
-}
-
+    );
+};
 export default LogInRegister;

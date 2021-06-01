@@ -4,6 +4,7 @@
     background-color: $color3;
     display: flex;
     justify-content: space-around;
+    
     .box_statistics{
         padding-top: 5%;
         padding-bottom: 5%;
@@ -13,13 +14,15 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+
         h1{
             font-size: 5rem;
-        }
+        };
+        
         span{
             font-size: 1.2rem;
             padding-top: 5%;
             padding-bottom: 5%;
-        }
-    }
-}
+        };
+    };
+};
