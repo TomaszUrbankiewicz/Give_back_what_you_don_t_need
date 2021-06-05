@@ -2,6 +2,7 @@
 import HomeHeader from "./home/HomeHeader";
 import StatisticsBox from"./home/StatisticsBox";
 import WhatIsGoingOn from"./home/WhatIsGoingOn";
+import UboutUs from "./home/UboutUs";
 
 const Home = () =>{
   return(
@@ -9,6 +10,7 @@ const Home = () =>{
         <HomeHeader/>
         <StatisticsBox/>
         <WhatIsGoingOn/>
+        <UboutUs/>
       </>
   );
 };
