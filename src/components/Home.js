@@ -3,6 +3,7 @@ import HomeHeader from "./home/HomeHeader";
 import StatisticsBox from"./home/StatisticsBox";
 import WhatIsGoingOn from"./home/WhatIsGoingOn";
 import UboutUs from "./home/UboutUs";
+import WhoWeHelp from "./home/WhoWeHelp";
 
 const Home = () =>{
   return(
@@ -11,6 +12,7 @@ const Home = () =>{
         <StatisticsBox/>
         <WhatIsGoingOn/>
         <UboutUs/>
+        <WhoWeHelp/>
       </>
   );
 };
