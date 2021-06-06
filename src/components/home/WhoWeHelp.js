@@ -27,7 +27,9 @@ const WhoWeHelp = () =>{
                 <div id="2" onClick={change} className={(viev==2)?"button_hover":"button"}>Organizacjom pozarzadowym</div>
                 <div id="3" onClick={change} className={(viev==3)?"button_hover":"button"}>Lokalnym zbiurkom</div>
             </div>
-            <ListBox viev={viev}/>
+            <ListBox 
+                viev={viev}
+            />
         </section>
     );
 };

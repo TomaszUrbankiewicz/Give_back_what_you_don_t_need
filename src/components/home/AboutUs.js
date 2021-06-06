@@ -2,7 +2,7 @@ import React from 'react';
 import LetteringWithDecoration from "../LetteringWithDecoration";
 import foto from "../../assets/Signature.svg";
 
-const UboutUs = () =>{
+const AboutUs = () =>{
     return(
         <section name="UboutUs" className="ubout_us">
             <div className="ubout_us_text">
@@ -23,4 +23,4 @@ const UboutUs = () =>{
         </section>
     );
 };
-export default UboutUs;
+export default AboutUs;

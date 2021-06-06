@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import List from "../home/List";
+import foundation from "../../data/foundation";
+import local from "../../data/local";
+import organization from "../../data/organization";
 
 
 const ListBox = (props) =>{
@@ -6,12 +10,15 @@ const ListBox = (props) =>{
         return(
             <section className="box_list">
                 <div className="box_p">
-                    <p1>
-                        {`W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi
-                        współpracujemy. Możesz sprawdzić czym się zajmują, 
-                        komu pomagają i czego potrzebują.`} 
-                    </p1>
+                    <p>
+                        {foundation.p}
+                    </p>
                 </div>
+                <List 
+                    key="1" 
+                    viev={props.viev} 
+                    array={foundation.list}
+                />
             </section>
         );
     };
@@ -19,12 +26,15 @@ const ListBox = (props) =>{
         return(
             <section className="box_list">
                 <div className="box_p">
-                    <p1>
-                        {`W naszej bazie znajdziesz listę zweryfikowanych organizacji pozarządowych.
-                        Możesz sprawdzić czym się zajmują, 
-                        komu pomagają i czego potrzebują.`} 
-                    </p1>
+                    <p>
+                        {organization.p}
+                    </p>
                 </div>
+                <List 
+                    key="2" 
+                    viev={props.viev} 
+                    array={organization.list}
+                />
             </section>
         );
     };
@@ -32,12 +42,15 @@ const ListBox = (props) =>{
         return(
             <section className="box_list">
                 <div className="box_p">
-                    <p1>
-                        {`W naszej bazie znajdziesz listę lokalnych zbiurek. 
-                        Możesz sprawdzić czym się zajmują, 
-                        komu pomagają i czego potrzebują.`} 
-                    </p1>
+                    <p>
+                        {local.p}
+                    </p>
                 </div>
+                <List  
+                    key="3" 
+                    viev={props.viev} 
+                    array={local.list}
+                />
             </section>
         );
     };

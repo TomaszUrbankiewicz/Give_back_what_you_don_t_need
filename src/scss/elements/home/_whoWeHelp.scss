@@ -25,17 +25,18 @@
             
             &:hover{
                 cursor: pointer;
-            }
+            };
         };
 
         .button_hover{
             @extend .button;
             border: solid 1px $color5;
-        }
+        };
     };
 
     .box_list{
         margin-top: 3%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -43,10 +44,83 @@
 
         .box_p{
             width: 40%;
-            margin-top: 3%;
-            margin-bottom: 3%;
+            height: 120px;
             font-size: 1.5rem;
             text-align: center;
-        }
-    }
+        };
+
+        .list{ 
+            width: 100%;
+
+            .box_list_{
+                width: 100%;
+
+                .box_list_li{
+                    margin-top: 1%;
+                    margin-left: 15%;
+                    margin-right: 15%;
+                    display: flex;
+                    padding-top: 2%;
+                    justify-content: space-between;
+                    border-top:solid 2px $color4 ;
+
+                    &:first-child{
+                        border-top:solid 2px white;
+                    }
+
+                    .list_left{
+                        color: $color4;
+
+                        h1{
+                            font-size: 1.8rem;
+                            font-family: $font-base;
+                        }
+
+                        p{
+                            font-size: 1.2rem;
+                            margin-top: 2%;
+                            font-family: $font-alt
+                        }
+                    };
+    
+                    .list_rights{
+                        color: $color4;
+
+                        span{
+                            font-size: 1.2rem;
+                        }
+                    };
+                }
+            };
+
+            .box_buton_change{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 50px;
+                margin-top: 5%;
+                margin-bottom: 5%;
+
+                .buton_change{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 5px;
+                    width: 30px;
+                    height: 40px;
+                    border: solid 2px white;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                };
+                .buton_change_hover{
+                    @extend .buton_change;
+                    border: solid 2px $color5;
+                };
+            };
+            
+        };
+    };
 };

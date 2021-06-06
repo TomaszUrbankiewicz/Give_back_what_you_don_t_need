@@ -14,10 +14,10 @@ const HomeHeader = () =>{
         <header name="HomeHeader">
             <div className="header_foto"></div>
             <div className="header_menu_and_selection_buttons">
-                <naw>
+                <nav>
                     <LogInRegister/>
                     <Menu/>
-                </naw>
+                </nav>
                 <section className="tip">
                     <LetteringWithDecoration 
                         text="Zacznij pomagać!" 

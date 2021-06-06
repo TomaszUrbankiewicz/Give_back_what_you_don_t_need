@@ -2,7 +2,7 @@
 import HomeHeader from "./home/HomeHeader";
 import StatisticsBox from"./home/StatisticsBox";
 import WhatIsGoingOn from"./home/WhatIsGoingOn";
-import UboutUs from "./home/UboutUs";
+import AboutUs from "./home/AboutUs";
 import WhoWeHelp from "./home/WhoWeHelp";
 
 const Home = () =>{
@@ -11,7 +11,7 @@ const Home = () =>{
         <HomeHeader/>
         <StatisticsBox/>
         <WhatIsGoingOn/>
-        <UboutUs/>
+        <AboutUs/>
         <WhoWeHelp/>
       </>
   );
