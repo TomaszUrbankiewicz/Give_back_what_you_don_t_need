@@ -1,19 +1,14 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    useHistory
-} from 'react-router-dom';
-import LetteringWithDecoration from "../LetteringWithDecoration";
-import Instructions from "./Instructions";
+import {Link} from 'react-router-dom';
+import LetteringWithDecoration from "../not_assigned/LetteringWithDecoration";
+import Instructions from "../home/used_at_home/Instructions";
 import foto1 from "../../assets/Icon-1.svg";
 import foto2 from "../../assets/Icon-2.svg";
 import foto3 from "../../assets/Icon-3.svg";
 import foto4 from "../../assets/Icon-4.svg";
 
 
-const WhatIsGoingOn = () =>{
+const HomeWhatIsGoingOn = () => {
     return(
         <section name="WhatIsGoingOn" className="what_is_going_on">
             <LetteringWithDecoration 
@@ -52,4 +47,4 @@ const WhatIsGoingOn = () =>{
         </section>
     );
 };
-export default WhatIsGoingOn;
+export default HomeWhatIsGoingOn;

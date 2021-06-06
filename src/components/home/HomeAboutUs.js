@@ -1,8 +1,8 @@
 import React from 'react';
-import LetteringWithDecoration from "../LetteringWithDecoration";
+import LetteringWithDecoration from "../not_assigned/LetteringWithDecoration";
 import foto from "../../assets/Signature.svg";
 
-const AboutUs = () =>{
+const HomeAboutUs = () => {
     return(
         <section name="UboutUs" className="ubout_us">
             <div className="ubout_us_text">
@@ -23,4 +23,4 @@ const AboutUs = () =>{
         </section>
     );
 };
-export default AboutUs;
+export default HomeAboutUs;

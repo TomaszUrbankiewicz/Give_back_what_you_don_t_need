@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import LetteringWithDecoration from "../LetteringWithDecoration";
-import ListBox from "./ListBox";
+import LetteringWithDecoration from "../not_assigned/LetteringWithDecoration";
+import ListBox from "../home/used_at_home/ListBox";
 
-const WhoWeHelp = () =>{
+const HomeWhoWeHelp = () => {
     const[viev, setViev]=useState(1) //state warunkowego renderowania
 
-    const change = (e) =>{      // zdarzenie zmiany state viev
+    const change = (e) => {      // zdarzenie zmiany state viev
         if(e.target.id==1){
             setViev(1)
         };
@@ -33,4 +33,4 @@ const WhoWeHelp = () =>{
         </section>
     );
 };
-export default WhoWeHelp;
+export default HomeWhoWeHelp;

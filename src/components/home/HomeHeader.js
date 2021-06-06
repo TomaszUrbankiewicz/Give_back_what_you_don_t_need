@@ -1,15 +1,10 @@
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    useHistory
-} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import React from 'react';
-import Menu from "./Menu";
-import LogInRegister from "./LogInRegister";
-import LetteringWithDecoration from "../LetteringWithDecoration";
+import Menu from "../home/used_at_home/Menu";
+import LogInRegister from "../home/used_at_home/LogInRegister";
+import LetteringWithDecoration from "../not_assigned/LetteringWithDecoration";
 
-const HomeHeader = () =>{
+const HomeHeader = () => {
     return(
         <header name="HomeHeader">
             <div className="header_foto"></div>

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import List from "../home/List";
-import foundation from "../../data/foundation";
-import local from "../../data/local";
-import organization from "../../data/organization";
+import WritingAList from "../used_at_home/WritingAList";
+import foundation from "../../../data/foundation";
+import local from "../../../data/local";
+import organization from "../../../data/organization";
 
 
-const ListBox = (props) =>{
+const ListBox = (props) => {
     if(props.viev==1){
         return(
             <section className="box_list">
@@ -14,10 +14,10 @@ const ListBox = (props) =>{
                         {foundation.p}
                     </p>
                 </div>
-                <List 
+                <WritingAList 
                     key="1" 
                     viev={props.viev} 
-                    array={foundation.list}
+                    set={foundation.list}
                 />
             </section>
         );
@@ -30,10 +30,10 @@ const ListBox = (props) =>{
                         {organization.p}
                     </p>
                 </div>
-                <List 
+                <WritingAList 
                     key="2" 
                     viev={props.viev} 
-                    array={organization.list}
+                    set={organization.list}
                 />
             </section>
         );
@@ -46,10 +46,10 @@ const ListBox = (props) =>{
                         {local.p}
                     </p>
                 </div>
-                <List  
+                <WritingAList  
                     key="3" 
                     viev={props.viev} 
-                    array={local.list}
+                    set={local.list}
                 />
             </section>
         );

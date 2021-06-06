@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const ButtonListChage = (props) =>{
+const ButtonListChage = (props) => {
 
-    const induction = (e) =>{
+    const induction = (e) => {
         props.change_sides(e)
     }
 

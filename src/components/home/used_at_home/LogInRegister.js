@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LogInRegister = () =>{
+const LogInRegister = () => {
     return(
         <div className="log_in_register">
             <ul>

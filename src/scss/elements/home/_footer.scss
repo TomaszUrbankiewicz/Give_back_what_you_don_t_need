@@ -1,0 +1,19 @@
+.footer{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .footer_text{
+        width: 50%;
+    };
+
+    .footer_foto{
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+        img{
+            margin-left: 6%;
+        };
+    };
+};
