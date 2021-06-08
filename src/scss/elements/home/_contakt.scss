@@ -44,11 +44,46 @@
                         border: none;
                         border-bottom: solid 2px $color5;
                         padding-top: 5%;
+                        margin-top: 2%;
+                    };
+                };
+
+                .form_box_input_name{
+                    position: relative;
+    
+                    &:after{
+                        position: absolute;
+                        top:55px;
+                        font-size: 0.7rem;
+                        left: 0;
+                        color:red;
+                        content: "Podane imię jest niepraswidłowe";
+                    };
+    
+                    input{
+                        border-bottom: solid 2px red;
+                    };
+                };
+
+                .form_box_input_email{
+                    position: relative;
+    
+                    &:after{
+                        position: absolute;
+                        top:55px;
+                        left: 0;
+                        font-size: 0.7rem;
+                        color:red;
+                        content: "Podane email jest nieprawidłowy";
+                    };
+    
+                    input{
+                        border-bottom: solid 2px red;
                     };
                 };
             };
 
-            .form_messange{
+            .form_box_messange{
                 width: 60%;
                 margin-top: 8%;
                 display: flex;
@@ -66,6 +101,24 @@
                     resize:none;
                 };
             };
+
+            .form_messange{
+                position: relative;
+
+                &:after{
+                    color:red;
+                    content: "Wiadomośc musi mieć conajmniej 120 znaków";
+                    position: absolute;
+                    bottom:-15px;
+                    left: 0;
+                    font-size: 0.7rem;
+                };
+
+                textarea{
+                    border-bottom: solid 2px red;
+                };
+            };
+            
         };
 
         .box_form_button{
