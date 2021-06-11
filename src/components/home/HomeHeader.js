@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 import React from 'react';
-import Menu from "../home/used_at_home/Menu";
-import LogInRegister from "../home/used_at_home/LogInRegister";
+import MenuHome from "../home/used_at_home/MenuHome";
+import LogInRegister from "../not_assigned/LogInRegister";
 import LetteringWithDecoration from "../not_assigned/LetteringWithDecoration";
 
 const HomeHeader = () => {
@@ -11,7 +11,7 @@ const HomeHeader = () => {
             <div className="header_menu_and_selection_buttons">
                 <nav>
                     <LogInRegister/>
-                    <Menu/>
+                    <MenuHome/>
                 </nav>
                 <section className="tip">
                     <LetteringWithDecoration 

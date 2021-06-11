@@ -17,51 +17,6 @@ header{
         width: 55%;
         height: 100%;
     
-        .menu{
-            margin-top: 2%;
-            padding-left: 20%;
-            padding-right: 10%;
-
-            ul{
-                font-size: 18px;
-                display: flex;
-                justify-content: space-between;
-
-                li{
-                    border: solid 1px white;
-                    padding: 7px;
-
-                    &:hover{
-                        cursor: pointer;
-                        border: solid 1px $color5;
-                    };
-                };
-            };
-        };
-
-        .log_in_register{
-            margin-top: 5%;
-            padding-right: 10%;
-            display: flex;
-            justify-content:flex-end;
-        
-            ul{
-                font-size: 14px;
-                display: flex;
-                justify-content: right;
-
-                li{
-                    border: solid 1px white;
-                    padding: 7px;
-
-                    &:hover{
-                        cursor: pointer;
-                        border: solid 1px $color3;
-                    };
-                };
-            };
-        };
-
         .tip{
             width: 100%;
             margin-top: 20%;

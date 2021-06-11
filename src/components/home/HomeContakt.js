@@ -68,6 +68,7 @@ const HomeContakt = () => {
                 console.info(resp)
                 if(resp.status=="success"){
                     setCorrect_sending(true)
+                    setInputvalu({ inputName:"", inputEmail:"", inputMessange:"" })
                 }
             })
             .catch( resp => {
@@ -83,6 +84,9 @@ const HomeContakt = () => {
                 <LetteringWithDecoration
                     text2="Skontaktuj się z nami"
                 />
+                <div className={ (correct_sending) ? "success" : "defeat" }>
+                    <span>Wiadomość została wysłana! Wkrótce się skontaktujemy.</span>
+                </div>
                 <div className="container_form">
                     <div className="form_name_email">
                         <div className={(error_input.name) ? "form_box_input" : "form_box_input form_box_input_name"}>

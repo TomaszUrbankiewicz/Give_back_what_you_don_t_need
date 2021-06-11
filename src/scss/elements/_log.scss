@@ -1,0 +1,114 @@
+.login, .registration{
+    width: 100%;
+
+    .form_login{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .box_input_login{
+            margin: 3%;
+            background-color: rgba(128, 128, 128, 0.26);
+            width: 17%;
+            display: flex;
+            flex-direction: column;
+            padding: 3% 5% 5% 5% ;
+
+            .box_input_email, .box_input_password, .box_input_password_2{
+                display: flex;
+                flex-direction: column;
+
+                label{
+                    font-size: 1.1rem;
+                    margin-top: 10%
+                };
+    
+                input{
+                    background-color: rgba(128, 128, 128, 0);
+                    border: none;
+                    border-bottom: solid 1px $color5;
+                    margin-top: 10%;
+                    margin-bottom: 4%
+    
+                };
+            };
+
+            .email_hover{
+                position: relative;
+    
+                    &:after{
+                        position: absolute;
+                        bottom:-5%;
+                        font-size: 0.7rem;
+                        left: 0;
+                        color:red;
+                        content: "Podaney email jest nieprawidłowy";
+                    };
+        
+                    input{
+                        border-bottom: solid 1px red;
+                    }; 
+            };
+
+            .password_hover{
+                position: relative;
+    
+                    &:after{
+                        position: absolute;
+                        bottom:-5%;
+                        font-size: 0.7rem;
+                        left: 0;
+                        color:red;
+                        content: "Podane hasło jest za krótkie";
+                    };
+        
+                    input{
+                        border-bottom: solid 1px red;
+                    }; 
+            };
+
+            .password_2_hover{
+                position: relative;
+    
+                    &:after{
+                        position: absolute;
+                        bottom:-5%;
+                        font-size: 0.7rem;
+                        left: 0;
+                        color:red;
+                        content: "Podane hasła nie jest poprawne";
+                    };
+        
+                    input{
+                        border-bottom: solid 1px red;
+                    }; 
+            };
+
+        };
+        
+        .box_button{
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5%;
+
+            button{
+                padding: 3% 5% 3% 5% ;
+                border: solid 2px white;
+                background-color: white;
+                
+                a{
+                    text-decoration: none;
+                    color: $color5;
+                }
+
+                &:hover{
+                    border: solid 2px $color5;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+};

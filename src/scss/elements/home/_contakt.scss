@@ -18,6 +18,18 @@
         justify-content: center;
         align-items: center;
 
+        .success{
+            color: green;
+            font-size: 1.5rem;
+            width: 60%;
+            height: 70px;
+            text-align: center;
+        }
+
+        .defeat{
+            display: none;
+        }
+
         .container_form{
             width: 100%;
             display: flex;
@@ -74,7 +86,7 @@
                         left: 0;
                         font-size: 0.7rem;
                         color:red;
-                        content: "Podane email jest nieprawidłowy";
+                        content: "Podany email jest nieprawidłowy";
                     };
     
                     input{
@@ -98,6 +110,7 @@
                     border: none;
                     border-bottom: solid 2px $color5;
                     margin-top: 2%;
+                    font-size: 1.2rem;
                     resize:none;
                 };
             };
@@ -127,7 +140,7 @@
             width: 70%;
             text-align: center;
             display: flex;
-
+            padding-top: 5%;    
             justify-content: flex-end;
 
             button{
