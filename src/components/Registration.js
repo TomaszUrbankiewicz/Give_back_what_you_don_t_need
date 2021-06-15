@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import LetteringWithDecoration from "./global/LetteringWithDecoration";
 import Menu from "./global/Menu";
 import LogInRegister from "./global/LogInRegister";
 import {Link} from 'react-router-dom';
+import {auth, firestore} from "../firebaseConfig";
+
+
 
 const Registration = () => {
-    const [input_value, setInput_value]=useState({email:"", password:"", password2:""});
+    const [input_value, setInput_value]=useState({email:"urbankiewicz@gmail.com", password:"tomek1234", password2:"tomek1234"});
     const [input_good, setImput_good]=useState({email:true, password:true, password2:true});
+    
 
+    
     const change_value = (e) => {
         setInput_value(pre => {return ({ ...pre,[e.target.name]:e.target.value})});
     };
@@ -18,20 +23,40 @@ const Registration = () => {
     }
 
     const register = () => {
+        let error=false
+
         if(!validateEmail(input_value.email)){
             setImput_good((prew) => { return(
                 {...prew, email:false}
             )})
+            error=true
         }
         if(input_value.password.length<6){
             setImput_good((prew) => { return(
                 {...prew, password:false}
             )})
+            error=true
         }
         if(input_value.password!=input_value.password2 || input_value.password2==""){
             setImput_good((prew) => { return(
                 {...prew, password2:false}
             )})
+            error=true
+        }
+        if(!error){
+
+
+            auth.createUserWithEmailAndPassword(input_value.email, input_value.password)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    console.log(user)
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    console.log(errorCode )
+                    console.log(errorMessage)
+                });
         }
     };
 
@@ -52,11 +77,11 @@ const Registration = () => {
                     </div>
                     <div className={ (input_good.password) ? "box_input_password" : "box_input_password password_hover"}>
                         <label>Hasło</label>
-                        <input onChange={change_value} name="email" value={input_value.password} type="password"/>
+                        <input onChange={change_value} name="password" value={input_value.password} type="password"/>
                     </div>
                     <div className={ (input_good.password2) ? "box_input_password_2" : "box_input_password_2 password_2_hover"}>
                         <label>Powtórz hasło</label>
-                        <input onChange={change_value} name="email" value={input_value.password2} type="password"/>
+                        <input onChange={change_value} name="password2" value={input_value.password2} type="password"/>
                     </div>
                 </div>
                 <div className="box_button">

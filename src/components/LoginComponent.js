@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import LetteringWithDecoration from "../components/global/LetteringWithDecoration";
 import Menu from "../components/global/Menu";
 import LogInRegister from "./global/LogInRegister";
 import {Link} from 'react-router-dom';
+import {auth, firestore} from "../firebaseConfig";
+
+
 
 const LoginComponent = () =>{
-    const [input_value, setInput_value]=useState({email:"", password:""})
+    const [input_value, setInput_value]=useState({email:"urbankiewicz@gmail.com", password:"tomek1234"})
     const [input_email_ok, setImput_email_ok]=useState(true);
     const [input_password_ok, setImput_password_ok]=useState(true)
+
 
     const change_value = (e) => {
         setInput_value(pre => {return ({ ...pre,[e.target.name]:e.target.value})});
@@ -19,11 +23,27 @@ const LoginComponent = () =>{
     }
 
     const sing_in = () => {
+        let error=false
+
         if(!validateEmail(input_value.email)){
             setImput_email_ok(false)
+            error=true
         }
         if(input_value.password.length<6){
             setImput_password_ok(false)
+            error=true
+        }
+        if(!error){
+            auth.signInWithEmailAndPassword(input_value.email, input_value.password)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                console.log(user.email)
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode, errorMessage)
+            });
         }
     };
 
