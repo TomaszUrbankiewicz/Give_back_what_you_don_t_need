@@ -21,19 +21,31 @@ const TransmissionHeader = () => {
                     <div className="container_box_steps">
                         <div className="box_steps">
                             <h1>1</h1>
-                            <p>Wybierz rzeczy</p>
+                            <p>
+                                <span>Wybierz</span> 
+                                <span>rzeczy</span>
+                            </p>
                         </div>
                         <div className="box_steps">
                             <h1>2</h1>
-                            <p><span>Spakuj je</span> <span>w worki</span></p>
+                            <p>
+                                <span>Spakuj je</span> 
+                                <span>w worki</span>
+                            </p>
                         </div>
                         <div className="box_steps">
                             <h1>3</h1>
-                            <p>Wybierz fundację</p>
+                            <p>
+                                <span>Wybierz</span>
+                                <span>fundację</span> 
+                            </p>
                         </div>
                         <div className="box_steps">
                             <h1>4</h1>
-                            <p>Zamów kuriera</p>
+                            <p>
+                                <span>Zamów</span> 
+                                <span>kuriera</span>
+                            </p>
                         </div>
                     </div>
                 </div>
