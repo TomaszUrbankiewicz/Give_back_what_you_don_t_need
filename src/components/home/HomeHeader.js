@@ -1,8 +1,8 @@
 import {Link} from 'react-router-dom';
 import React from 'react';
-import MenuHome from "../home/used_at_home/MenuHome";
-import LogInRegister from "../not_assigned/LogInRegister";
-import LetteringWithDecoration from "../not_assigned/LetteringWithDecoration";
+import MenuHome from "../home/usedHome/MenuHome";
+import LogInRegister from "../global/LogInRegister";
+import LetteringWithDecoration from "../global/LetteringWithDecoration";
 
 const HomeHeader = () => {
     return(

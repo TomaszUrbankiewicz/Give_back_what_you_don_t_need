@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import LetteringWithDecoration from "../components/not_assigned/LetteringWithDecoration";
-import Menu from "../components/not_assigned/Menu";
-import LogInRegister from "./not_assigned/LogInRegister";
+import LetteringWithDecoration from "./global/LetteringWithDecoration";
+import Menu from "./global/Menu";
+import LogInRegister from "./global/LogInRegister";
 import {Link} from 'react-router-dom';
 
-const Registration = () =>{
+const Registration = () => {
     const [input_value, setInput_value]=useState({email:"", password:"", password2:""});
     const [input_good, setImput_good]=useState({email:true, password:true, password2:true});
 
@@ -72,4 +72,3 @@ const Registration = () =>{
     );
 };
 export default Registration;
-

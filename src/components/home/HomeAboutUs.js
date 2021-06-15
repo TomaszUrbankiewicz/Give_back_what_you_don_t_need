@@ -1,5 +1,5 @@
 import React from 'react';
-import LetteringWithDecoration from "../not_assigned/LetteringWithDecoration";
+import LetteringWithDecoration from "../global/LetteringWithDecoration";
 import foto from "../../assets/Signature.svg";
 
 const HomeAboutUs = () => {

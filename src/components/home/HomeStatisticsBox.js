@@ -1,5 +1,5 @@
 import React from 'react';
-import StatisticsComponent from"../home/used_at_home/StatisticsComponent";
+import StatisticsComponent from"../home/usedHome/StatisticsComponent";
 
 const HomeStatisticsBox = () => {
     return(

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import LetteringWithDecoration from "../not_assigned/LetteringWithDecoration";
-import ListBox from "../home/used_at_home/ListBox";
+import LetteringWithDecoration from "../global/LetteringWithDecoration";
+import ListBox from "../home/usedHome/ListBox";
 
 const HomeWhoWeHelp = () => {
     const[viev, setViev]=useState(1) //state warunkowego renderowania

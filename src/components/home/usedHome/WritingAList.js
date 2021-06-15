@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ButtonListChage from "../used_at_home/ButtonListChage";
+import ButtonListChage from "./ButtonListChage";
 
 const WritingAList = (props) => {
 const [set, setSet]=useState([])//state do którego zapisujemy tablice obiektów z props

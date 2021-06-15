@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Link, scroller } from 'react-scroll'
+import React from 'react';
+import { Link } from 'react-scroll'
 
 const MenuHome = () => {
     

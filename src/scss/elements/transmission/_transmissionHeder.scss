@@ -1,0 +1,67 @@
+.transmission_heder{
+    width: 100%;
+    height: 750px;
+    display: flex;
+
+    .box_foto{
+        width: 40%;
+        background-image: url("../../../assets/Form-Hero-Image.jpg");
+        background-repeat: no-repeat;
+        background-size:120% 110%;
+    }
+    .box_nav_heder{
+        width: 60%;
+        
+
+        .container_header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 8%;
+            
+            span{
+                font-size: 2rem;
+                margin: 2%;
+                color: $color4;
+            }
+
+            .container_box_steps{
+                display: flex;
+                justify-content: space-around;
+                width: 90%;
+                position: relative;
+
+                .box_steps{
+                    display: flex;
+                    margin-top: 5%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 15%;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    color: $color4;
+
+                    p{
+                        margin-top: 10%;
+                        
+                        span{
+                            
+                        }
+                    }
+                }
+
+                .box_rotare{
+                    position: absolute;
+                    border: solid 1px $color4;
+                    width: 112px;
+                    height: 114px;
+                    transform: rotate(45deg);
+                    top: 30%;
+                    left: 5%;
+                }
+            }
+        }
+    }
+}

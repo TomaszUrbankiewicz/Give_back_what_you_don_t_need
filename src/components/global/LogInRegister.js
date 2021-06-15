@@ -9,7 +9,7 @@ const LogInRegister = () => {
                     <li>Zaloguj</li>
                 </Link>
                 <Link to="/registration">
-                    <li>Załuż konto</li>
+                    <li>Załóż konto</li>
                 </Link>
             </ul>
         </div>

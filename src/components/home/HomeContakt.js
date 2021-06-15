@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LetteringWithDecoration from "../not_assigned/LetteringWithDecoration";
+import LetteringWithDecoration from "../global/LetteringWithDecoration";
 
 const HomeContakt = () => {
     const[inputvalue, setInputvalu]=useState({ inputName:"", inputEmail:"", inputMessange:"" });

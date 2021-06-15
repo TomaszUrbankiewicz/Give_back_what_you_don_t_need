@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link,useHistory} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 import { scroller } from 'react-scroll'
 
 const Menu = () => {
@@ -12,7 +12,7 @@ const Menu = () => {
                 delay: 0,
                 smooth: 'easeInOutQuart'
             })
-         },0)
+        },0)
         h.push('/');
         console.log("jestem")
     }
@@ -20,7 +20,6 @@ const Menu = () => {
     return(
         <div className="menu">
             <ul>
-                
                 <li>
                     <button name="HomeHeader" onClick={zdarzenie}>Start</button>
                 </li>

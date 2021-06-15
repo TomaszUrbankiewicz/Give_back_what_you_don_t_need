@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import LetteringWithDecoration from "../components/not_assigned/LetteringWithDecoration";
-import Menu from "../components/not_assigned/Menu";
-import LogInRegister from "./not_assigned/LogInRegister";
+import LetteringWithDecoration from "../components/global/LetteringWithDecoration";
+import Menu from "../components/global/Menu";
+import LogInRegister from "./global/LogInRegister";
 import {Link} from 'react-router-dom';
 
 const LoginComponent = () =>{

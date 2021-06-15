@@ -1,0 +1,34 @@
+.log_uot{
+    height: 100vh;
+    .container{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        button{
+            margin-top: 2%;
+            padding: 1% 2% 1% 2%;
+            border: solid 1px $color4;
+            background-color: white;
+            
+            
+            a{
+                text-decoration: none;
+                color: $color4;
+            };
+
+            &:hover{
+                cursor: pointer;
+                color: $color5;
+                border: solid 1px $color5;
+
+                a{
+                    text-decoration: none;
+                    color: $color5;
+                };
+            };
+        };
+    };
+};
