@@ -14,7 +14,6 @@ const Menu = () => {
             })
         },0)
         h.push('/');
-        console.log("jestem")
     }
 
     return(

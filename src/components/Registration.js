@@ -4,15 +4,13 @@ import Menu from "./global/Menu";
 import LogInRegister from "./global/LogInRegister";
 import {Link} from 'react-router-dom';
 import {auth, firestore} from "../firebaseConfig";
-
-
+import {useHistory} from 'react-router-dom';
 
 const Registration = () => {
-    const [input_value, setInput_value]=useState({email:"urbankiewicz@gmail.com", password:"tomek1234", password2:"tomek1234"});
+    const [input_value, setInput_value]=useState({email:"", password:"", password2:""});
     const [input_good, setImput_good]=useState({email:true, password:true, password2:true});
-    
+    const h=useHistory()
 
-    
     const change_value = (e) => {
         setInput_value(pre => {return ({ ...pre,[e.target.name]:e.target.value})});
     };
@@ -49,7 +47,7 @@ const Registration = () => {
             auth.createUserWithEmailAndPassword(input_value.email, input_value.password)
                 .then((userCredential) => {
                     const user = userCredential.user;
-                    console.log(user)
+                    h.push('/login')
                 })
                 .catch((error) => {
                     const errorCode = error.code;

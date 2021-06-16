@@ -83,6 +83,13 @@ body{
                 cursor: pointer;
                 border: solid 1px $color3;
             };
+
+            button{
+                border: none;
+                background-color: white;
+                padding: 0px;
+                color: $color5;
+            }
         };
     };
 };

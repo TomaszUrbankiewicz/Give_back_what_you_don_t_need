@@ -3,15 +3,14 @@ import LetteringWithDecoration from "../components/global/LetteringWithDecoratio
 import Menu from "../components/global/Menu";
 import LogInRegister from "./global/LogInRegister";
 import {Link} from 'react-router-dom';
-import {auth, firestore} from "../firebaseConfig";
-
-
+import {auth} from "../firebaseConfig";
+import {useHistory} from 'react-router-dom';
 
 const LoginComponent = () =>{
-    const [input_value, setInput_value]=useState({email:"urbankiewicz@gmail.com", password:"tomek1234"})
+    const [input_value, setInput_value]=useState({email:"", password:""})
     const [input_email_ok, setImput_email_ok]=useState(true);
     const [input_password_ok, setImput_password_ok]=useState(true)
-
+    const h=useHistory()
 
     const change_value = (e) => {
         setInput_value(pre => {return ({ ...pre,[e.target.name]:e.target.value})});
@@ -37,7 +36,7 @@ const LoginComponent = () =>{
             auth.signInWithEmailAndPassword(input_value.email, input_value.password)
             .then((userCredential) => {
                 const user = userCredential.user;
-                console.log(user.email)
+                h.push('/transmission');
             })
             .catch((error) => {
                 const errorCode = error.code;

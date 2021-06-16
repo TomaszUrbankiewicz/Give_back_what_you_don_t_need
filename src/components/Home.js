@@ -5,6 +5,7 @@ import HomeAboutUs from "./home/HomeAboutUs";
 import HomeWhoWeHelp from "./home/HomeWhoWeHelp";
 import HomeContakt from "./home/HomeContakt";
 import HomeFooter from "./home/HomeFooter";
+import { useState } from "react";
 
 const Home = () =>  {
     return(
