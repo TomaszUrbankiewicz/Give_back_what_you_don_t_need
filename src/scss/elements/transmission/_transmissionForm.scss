@@ -27,15 +27,16 @@
         background-image: url("../../../assets/Background-Form.jpg");
         background-repeat: no-repeat;
         background-size:100% 100%;
-        width: 100%;
-        height: 700px;
+        padding-left: 10%;
+        width: 90%;
+        height: 95vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: center;
+        align-items: stretch;
         
         .box_number{
-            width: 80%;
+            width: 30%;
             font-size: 1.2rem;
             color: $color4;
         };
@@ -51,5 +52,12 @@
                 border: solid 1px $color4;
             };
         };
+
+        .box_component{
+            width: 60%;
+            height: 60%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
     };
 };
