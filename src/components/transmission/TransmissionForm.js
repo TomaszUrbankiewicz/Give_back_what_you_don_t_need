@@ -6,7 +6,7 @@ import TransmissionSteps from "../transmission/TransmissionSteps";
 
 
 const TransmissionForm = () => {
-    const[show_slide, setShow_slide]=useState(1);
+    const[show_slide, setShow_slide]=useState(2);
 
     const addition = () =>{
         setShow_slide(prev =>{

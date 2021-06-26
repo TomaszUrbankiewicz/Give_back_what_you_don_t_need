@@ -1,0 +1,84 @@
+.third_step{
+    .box_city{
+        h1{
+            font-size: 1.6rem;
+            font-weight: 700;
+        };
+
+        .box_select{
+            button{
+                width: 30%;
+                height: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 2%; 
+                font-size: 20px;
+                span{
+                    transform: rotate(-90deg);
+                    font-size: 2rem;
+                };
+            };
+
+            .box_opcion{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: $color4;
+                margin-top: 1%;
+                height: 120px;
+                position: absolute;
+                z-index: 2;
+                width: 16%;
+                background-color: white;
+                
+                .button{
+                    font-size: 1.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    border-left:solid 1px $color5; 
+                    border-right:solid 1px $color5;
+                    padding-left: 5%;
+        
+                    &:first-child{
+                        border-top:solid 1px $color5;
+                    };
+        
+                    &:last-child{
+                        border-bottom:solid 1px $color5;
+                    };
+                };
+        
+                &:hover{
+                    cursor: pointer;
+                };
+            };
+        
+            .box_opcion_none{
+                position: absolute;
+                z-index: 2;
+                opacity: 0;
+            };
+        };
+    };
+
+    .box_who_to_help{
+        margin-top: 3%;
+        h1{
+            font-size: 1.2rem;
+            font-weight: 700;
+        };
+
+        .box_button{
+            width: 70%;
+
+            .no_active{
+                margin-right: 3%;
+                margin-top: 3%;
+                padding: 2% 4% ;
+            };
+
+        };
+    };
+};

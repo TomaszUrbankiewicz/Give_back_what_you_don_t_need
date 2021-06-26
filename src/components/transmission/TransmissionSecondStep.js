@@ -1,8 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-const TransmissionSecondStep = () => {
-    const [value_ul, setValue_ul]=useState(" - wybierz - ");
+const TransmissionSecondStep = (props) => {
     const [clicked_button, setClicked_button]=useState(false);
 
     const change_button = () => {
@@ -10,7 +9,7 @@ const TransmissionSecondStep = () => {
     }
 
     const quantity_selection = (e) => {
-        setValue_ul(e.target.id)
+        props._quantity_selection(e.target.id)
         setClicked_button(false)
     }
 
@@ -19,7 +18,8 @@ const TransmissionSecondStep = () => {
             <h1>Podaj liczbę 60L warków, w które spakowałeś/aś rzeczy:</h1>
             <div className="box_select">
                 <h1>liczba 60L worków</h1>
-                <button className={(value_ul==" - wybierz - ") ? "big" : "small"} onClick={change_button}>{value_ul}
+                <button className={(props.value_ul==" - wybierz - ") ? "big" : "small"} onClick={change_button}>
+                    {props.value_ul}
                     <span>{(clicked_button) ? '>' : `<`}</span>
                 </button>
                 <div className={(clicked_button) ? "buttons" : "buttons_none"}>
