@@ -11,3 +11,94 @@
     };
 
 };
+
+
+//-----------------------TransmissionSecondStep------------------------------//
+.second_step{
+    width: 110%;
+    height: 100%;
+
+    h1{
+        font-size: 2rem; 
+        font-weight: 700;
+        margin-bottom: 5%
+    };
+    .box_select{
+        display: flex;
+        
+        h1{
+            font-size: 1.5rem;
+            font-weight: 400;
+        };
+
+        .big{
+            width: 25%;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left:2%; 
+            font-size: 20px;
+            
+
+            span{
+                transform: rotate(-90deg);
+                font-size: 2rem;
+            };
+        };
+
+        .small{
+            width: 8%;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left:2%; 
+            font-size: 20px;
+            span{
+                transform: rotate(-90deg);
+                font-size: 2rem;
+            };
+        };
+
+        .buttons{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            margin-top: 40px;
+            margin-left: -45px;
+            color: $color4;
+            
+            
+            .button{
+                top: 0;
+                left: 64%;
+                width: 40px;
+                font-size: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-left:solid 2px $color5; 
+                border-right:solid 2px $color5;
+    
+                &:first-child{
+                    border-top:solid 2px $color5;
+                };
+    
+                &:last-child{
+                    border-bottom:solid 2px $color5;
+                };
+            };
+    
+            &:hover{
+                cursor: pointer;
+            };
+        };
+    
+        .buttons_none{
+            opacity: 0;
+        };
+    };
+};

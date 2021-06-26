@@ -2,9 +2,15 @@ import React from 'react';
 
 const TransmissionFourthtStep = () => {
     return(
-        <>
-        <h1>1</h1>
-        </>
+        <section className="Fourtht_step">
+            <label >Wybierz karawan </label>
+                <select>
+                <option >Poznań</option>
+                <option >Warszawa</option>
+                <option >Wrocław</option>
+                <option >Kraków</option>
+                </select>
+        </section>
     );
 };
 export default TransmissionFourthtStep;

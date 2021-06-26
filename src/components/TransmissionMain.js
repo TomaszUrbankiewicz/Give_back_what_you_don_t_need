@@ -12,6 +12,6 @@ const TransmissionMain = () => {
             <HomeContakt/>
             <HomeFooter/>
         </>
-    )
-}
+    );
+};
 export default TransmissionMain;

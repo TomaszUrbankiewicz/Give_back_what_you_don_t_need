@@ -10,6 +10,7 @@ const TransmissionFirstStep = () => {
                 return(
                     <Checkbox 
                         text={el}
+                        key={id}
                     />
                 )
             })}
