@@ -14,10 +14,14 @@
             .box_text{
                 width:890px ;
 
-                h1{
+                .visible{
                     font-size: 2rem;
                     font-weight: 700;
                     margin-bottom: 0.5%
+                };
+
+                .hidden{
+                    opacity: 0;
                 };
             };
         };
@@ -50,6 +54,10 @@
                 height: 200%;
                 margin-right:3%; 
                 border: solid 1px $color4;
+            };
+
+            #last{
+                width: 25%;
             };
         };
 

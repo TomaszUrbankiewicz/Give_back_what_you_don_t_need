@@ -6,7 +6,7 @@ import TransmissionSteps from "../transmission/TransmissionSteps";
 
 
 const TransmissionForm = () => {
-    const[show_slide, setShow_slide]=useState(2);
+    const[show_slide, setShow_slide]=useState(3);
 
     const addition = () =>{
         setShow_slide(prev =>{
@@ -31,7 +31,7 @@ const TransmissionForm = () => {
             />
             <div className="container_form">
                 <div className="box_number">
-                    <h1>Krok {show_slide + 1}/4</h1>
+                    {(show_slide!=4) ? <h1 >Krok {show_slide + 1}/4</h1> : null } 
                 </div>
                 <div className="box_component">
                     <TransmissionSteps
@@ -39,8 +39,9 @@ const TransmissionForm = () => {
                     />
                 </div>
                 <div className="box_buttons">
-                    {(show_slide!=0 & show_slide!=3) ? <button onClick={subtraction}>Wstecz</button> : null}
-                    {(show_slide!=3) ? <button onClick={addition}>Dalej</button> : null}
+                    {(show_slide!=0 & show_slide!=5) ? <button onClick={subtraction}>Wstecz</button> : null}
+                    {(show_slide!=4) ? <button onClick={addition}>Dalej</button> : null}
+                    {(show_slide==4) ? <button id="last" onClick={addition}>Potwierdzam</button> : null}
                 </div>
             </div>
         </section>

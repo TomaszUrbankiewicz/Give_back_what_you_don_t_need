@@ -13,6 +13,6 @@ const form= {
         {text:"zabawki",name:"toys" },
         {text:"książki",name:"books"},
         {text:"inne",name:"others"}
-    ]
+    ],
 };
 export  default form;
