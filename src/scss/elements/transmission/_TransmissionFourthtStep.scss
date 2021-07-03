@@ -1,0 +1,75 @@
+.fourtht_step{
+    
+    margin-top: 2%;
+    h1{
+        font-weight: 700;
+        font-size: 1.6rem;
+    };
+
+    .box_form{
+        display: flex;
+
+        .box_date{
+            margin-left: 4%;
+            margin-top: 10%;
+            width: 35%;
+
+            h1{
+                margin-bottom: 10%;
+                font-weight: 700;
+                font-size: 1.2rem
+            };
+        };
+
+        .box_address{
+            margin-top: 10%;
+            width: 35%;
+
+            h1{
+                margin-bottom: 10%;
+                font-weight: 700;
+                font-size: 1.2rem
+            };
+        };
+        .box_inputs{
+            width: 100%;
+
+            .box_input_big{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-top: 4%;
+
+                label{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center
+                };
+
+                textarea{
+                    width: 60%;
+                    border: solid 1px $color4;
+                    resize: none;
+                };
+            };
+
+            .box_input{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 4%;
+
+                label{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center
+                };
+
+                input{
+                    width: 60%;
+                    border: solid 1px $color4;
+                };
+            };
+        };
+    };
+};

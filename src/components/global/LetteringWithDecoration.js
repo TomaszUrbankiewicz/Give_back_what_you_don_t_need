@@ -6,6 +6,7 @@ const LetteringWithDecoration = (props) =>  {
         <div className="lettering_with_decoration">
             <h1>{props.text}</h1>
             <h1>{props.text2}</h1>
+            <h1>{props.text3}</h1>
             <img src={foto} title="dekoracja"/>
         </div>
     );
