@@ -8,7 +8,6 @@
  - `npm install`
  - `npm start`
  - `npm run build`
-Stronę otwieramy w localhost:3000
 # Główne cechy strony:
 1. Strona nie rensponsywna.
 2. Logowanie użytkownika za pomocą Firebase 
