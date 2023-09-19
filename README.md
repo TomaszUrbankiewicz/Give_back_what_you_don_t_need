@@ -1,4 +1,4 @@
-### !!!! Aplikacja nie rensponsywna !!! 
+### !! Aplikacja nie rensponsywna !!
 
 # Give back what you don't need
 &#9755;  <a href='https://give-to-de-need.netlify.app/'>Podgląd strony</a> <br><br>
