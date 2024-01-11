@@ -20,6 +20,7 @@
 @import "./elements/transmission/transmission_summary_step";
 
 body{
+    min-width: 1260px;
     font-family: $font-base;
 };
 
