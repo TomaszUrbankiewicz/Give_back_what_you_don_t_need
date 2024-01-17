@@ -12,13 +12,14 @@
 
 1. Czysty Kod:
 Kod aplikacji został napisany zgodnie z zasadami czystego kodu, co ułatwia jego zrozumienie, utrzymanie i rozwijanie w przyszłości.
-Stosowane są dobre praktyki programistyczne, takie jak odpowiednie nazewnictwo zmiennych i funkcji, zasada jednej odpowiedzialności, oraz zminimalizowanie powtarzalności kodu (DRY - Don't Repeat Yourself).
+Stosowane są dobre praktyki programistyczne, takie jak odpowiednie nazewnictwo zmiennych i funkcji, zasada jednej odpowiedzialności,
+oraz zminimalizowanie powtarzalności kodu (DRY - Don't Repeat Yourself).
 
-2.Nowe Technologie:
+2. Nowe Technologie:
 Do udoskonalenia funkcjonalności aplikacji użyto najnowszych technologii, dostarczając nowoczesne i efektywne rozwiązania.
 Zastosowano innowacyjne podejścia, które podnoszą jakość projektu i korzystają z aktualnych standardów branżowych.
 
-3.Rejestracja i Logowanie:
+3. Rejestracja i Logowanie:
 Aplikacja umożliwia nowym użytkownikom rejestrację konta, zapewniając bezpieczny i intuicyjny proces.
 Po rejestracji użytkownicy mogą zalogować się do systemu, co otwiera dostęp do pełnej funkcjonalności aplikacji.
 
